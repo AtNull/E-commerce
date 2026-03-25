@@ -27,6 +27,22 @@ android {
     buildFeatures {
         buildConfig = true
         viewBinding = true
+        resValues = true
+    }
+
+    flavorDimensions += "brand"
+
+    productFlavors {
+        create("greenBrand") {
+            dimension = "brand"
+            applicationIdSuffix = ".greenbrand"
+        }
+
+        create("blueBrand") {
+            dimension = "brand"
+            applicationIdSuffix = ".bluebrand"
+            resValue("string", "app_name", "Blue Commerce")
+        }
     }
 
     buildTypes {
@@ -42,6 +58,7 @@ android {
             buildConfigField("String", "BASE_URL", "\"https://dummyjson.com\"")
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
