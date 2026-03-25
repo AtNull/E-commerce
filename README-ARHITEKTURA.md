@@ -1,12 +1,12 @@
 # Arhitektura #
 
-Aplikacije koristi kombinaciju kombinaciju Clean Architecture i MVVM principa.
+Aplikacije koristi kombinaciju Clean Architecture i MVVM principa.
 Clean Architecture obezbeđuje razdvajanje koda na nezavisne slojeve, čija se implementacija može lako menjati bez uticaja na ostatak projekta.
-MVVM obezbeđuje razdvanaje korisničkog interfejsa od biznis logika. Na ovaj način UI postaje potpuno nezavisan od izvora podataka i njihove obrade.
+MVVM obezbeđuje razdvajanje korisničkog interfejsa od biznis logika. Na ovaj način, UI postaje potpuno nezavisan od izvora podataka i njihove obrade.
 
 **Slojevi aplikacije**
 * UI sloj (Presentation) - ViewModel komunicira sa data slojem preko repository i izlaže stanje preko StateFlow-a. Activity i fragmenti osluškuju promene i prikazuju sadržaj na osnovu dobijenog stanja čime postaju odgovorni samo za prikaz, ali ne i čuvanje podataka.
-* Data sloj - Ovaj sloj upravlja podacima iz različitih izvora sa repository kao posdrednikom. Za komunikaciju sa web API koristi se Retrofit, dok se za lokalno skladištenje koristi Room baza. Podaci preuzeti sa APi-ja se prvo skladište u bazu, odakle se dalje emituju ka UI sloju. Ovim pristupom baza postaje jedini izvor istine.
+* Data sloj - Ovaj sloj upravlja podacima iz različitih izvora sa repository kao posdrednikom. Za komunikaciju sa web API se koristi Retrofit, dok se za lokalno skladištenje koristi Room baza. Podaci preuzeti sa APi-ja se prvo skladište u bazi, odakle se dalje emituju ka UI sloju. Ovim pristupom baza postaje jedini izvor istine.
 
 # Instrukcije za instalaciju #
 
@@ -28,4 +28,4 @@ MVVM obezbeđuje razdvanaje korisničkog interfejsa od biznis logika. Na ovaj na
   <img src="https://github.com/user-attachments/assets/1fa843f3-cb27-4762-852f-8b7023fc01d8" width="20%" />
 </p>
 
-Tap na karticu sa proizvodom otvara ekran sa detaljima o proizvodu. Pritisak na strelicu zatvara ekran, dok pritisak na srce dodaje proizvod u Favorites.
+Pritisak na karticu sa proizvodom otvara ekran sa detaljima o proizvodu. Pritisak na strelicu zatvara ekran, dok pritisak na srce dodaje proizvod u Favorites.
