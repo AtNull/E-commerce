@@ -24,11 +24,12 @@ Mana ovog pristupa je to što se podaci dupliraju, zbog čega mogu biti neuskla�
 **Korisnički interfejs**
 
 Pošto se glavni sadržaj sastoji od dva ekrana, umesto donje navigacije koristila sam tabove u kombinaciji sa ViewPager komponentom. Kako bi se izbeglo slučajno prebacivanje na drugi tab prilikom brzog skrolovanja isključila sam mogućnost promene taba prevlačenjem.
-Radi lakšeg prilagođavanja izgleda aplikacije koristila sam Material Design sistem tokena, čime se omogućava lako rebrandiranje.
+Radi lakšeg prilagođavanja izgleda aplikacije koristila sam Material Design sistem tokena, čime se omogućava lako rebrandiranje. Na početnoj strani sam dodala i AppBar koji prikazuje logo kompanije, ali pošto zauzima mnogo prostora korisnik ga može sakriti skrolovanjem.
 
 <br>
 
 **Out of scope**
 
 Kako sam bila ograničena vremenom određene funkcionalnosti sam zamenila prostijim rešenjima. Umesto planiranih skeleton komponenti, koristila sam CircularProgressIndicator. Takođe, isključena je podrška za dark mode.
+Neki delovi korisničkog interfejsa, kao što je broj kolona u gridu i ekran sa detaljima nisu optimizovani za tablete. Rešenje ovog problema bi zahtevalo definisanje odvojenih vrednosti ili odvojenih layouta. Na primer, grid bi mogao imati veći broj kolona, dok bi ekran sa detaljima mogao da ima odvojene portrait i landscape layoute.
 
