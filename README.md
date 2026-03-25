@@ -11,7 +11,7 @@ MVVM obezbeđuje razdvanaje korisničkog interfejsa od biznis logika. Na ovaj na
 # Instrukcije za instalaciju #
 
 **Opcija 1: APK**
-1. Preuzmi priloženi apk fajl
+1. Iz release sekcije preuzmi priloženi apk fajl
 2. Instaliraj apk fajl
 
 **Opcija 2: Ručno buildovanje**
@@ -20,3 +20,12 @@ MVVM obezbeđuje razdvanaje korisničkog interfejsa od biznis logika. Na ovaj na
 3. Sačekaj da se izvrši gradle sync
 4. Ako želiš, promeni flavor (Trenutno su dostupni greenBrand i blueBrand)
 5. Pokreni aplikaciju
+
+# Screenshotovi #
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/baedae3d-bd8c-46d4-9a6b-09449dd4a97d" width="20%" />
+  <img src="https://github.com/user-attachments/assets/4a8f7938-f16e-4268-bc2b-d56861b74b1f" width="20%" /> 
+  <img src="https://github.com/user-attachments/assets/1fa843f3-cb27-4762-852f-8b7023fc01d8" width="20%" />
+</p>
+
+Tap na karticu sa proizvodom otvara ekran sa detaljima o proizvodu. Pritisak na strelicu zatvara ekran, dok pritisak na srce dodaje proizvod u Favorites.
