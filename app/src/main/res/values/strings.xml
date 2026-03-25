@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">E commerce</string>
+    <string name="product_image">Product image</string>
+    <string name="back">Back</string>
+    <string name="home">Home</string>
+    <string name="favorites">Favorites</string>
+    <string name="close">Close</string>
+    <string name="toggle_favorite">Toggle favorite</string>
+    <string name="no_favorites_title">No favorites yet</string>
+    <string name="no_favorites_description">See something you like? Tap the heart to keep it here.</string>
+    <string name="empty_state">Empty state</string>
+    <string name="whoops">WHOOPS</string>
+    <string name="generic_error_message">Something went wrong. Please check your network and try again.</string>
+    <string name="no_products">Nothing here yet, but stay tuned!</string>
+    <string name="no_products_message">Our store is getting ready behind the scenes. Come back soon and see what\'s new.</string>
+    <string name="retry">Retry</string>
+</resources>

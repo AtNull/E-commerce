@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.favorites.FavoritesFragment"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favorites_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="96dp"
+        android:clipToPadding="false"
+        android:visibility="gone"
+        />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone"
+        />
+
+    <com.example.ecommerce.ui.home.common.InfoView
+        android:id="@+id/info_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:title="@string/no_favorites_title"
+        app:description="@string/no_favorites_description"
+        />
+
+</FrameLayout>
