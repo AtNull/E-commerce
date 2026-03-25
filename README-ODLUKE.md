@@ -1,4 +1,4 @@
-# Ključne odliuke #
+# Ključne odluke #
 
 **Paginacija**
 
